@@ -5,7 +5,7 @@
 
   <groupId>com.sdklite</groupId>
   <artifactId>oss</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <packaging>pom</packaging>
 
   <name>OSS Parent</name>
@@ -201,6 +201,24 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>buildnumber-maven-plugin</artifactId>
+        <version>1.4</version>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>create</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <doCheck>true</doCheck>
+          <doUpdate>true</doUpdate>
+          <shortRevisionLength>7</shortRevisionLength>
+        </configuration>
       </plugin>
     </plugins>
   </build>
