@@ -5,7 +5,7 @@
 
   <groupId>com.sdklite</groupId>
   <artifactId>oss</artifactId>
-  <version>0.0.5</version>
+  <version>0.0.4</version>
   <packaging>pom</packaging>
 
   <name>OSS Parent</name>
